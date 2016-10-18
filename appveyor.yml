@@ -1,13 +1,13 @@
 environment:
   matrix:
     - PYTHON: "C:\\Python26"
-    - PYTHON: "C:\\Python27"
-    - PYTHON: "C:\\Python32"
-    - PYTHON: "C:\\Python34"
+    # - PYTHON: "C:\\Python27"
+    # - PYTHON: "C:\\Python32"
+    # - PYTHON: "C:\\Python34"
 
 install:
-  - pip install flake8 mock nose
-  - pip install .
+  - "%PYTHON%\\python.exe -m pip install flake8 mock nose"
+  - "%PYTHON%\\python.exe -m pip install ."
 # test_script: 
 # 	- nosetests -v && flake8 *.py --max-line-length=110
 
