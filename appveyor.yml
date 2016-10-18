@@ -8,7 +8,7 @@ environment:
 install:
   - pip install flake8 mock nose
   - pip install .
-test_script: 
-	- nosetests -v && flake8 *.py --max-line-length=110
+# test_script: 
+# 	- nosetests -v && flake8 *.py --max-line-length=110
 
 build: off
