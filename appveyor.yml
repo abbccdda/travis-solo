@@ -15,7 +15,7 @@ install:
   - "%PYTHON%/Scripts/pip.exe install ."
 
 test_script: 
-  # - flake8 *.py --max-line-length=110
-  - cmd: dir %PYTHON%\Scripts\
+  - "%PYTHON%\Scripts\nosetests.exe -v"
+  - "%PYTHON%\Scripts\flake8.exe *.py --max-line-length=110"
 
 build: off
