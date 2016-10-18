@@ -1,9 +1,12 @@
 # environment:
 #   matrix:
 #     - PYTHON: "C:\\Python26"
-    # - PYTHON: "C:\\Python27"
-    # - PYTHON: "C:\\Python32"
-    # - PYTHON: "C:\\Python34"
+#     - PYTHON: "C:\\Python27"
+#     - PYTHON: "C:\\Python32"
+#     - PYTHON: "C:\\Python34"
+
+environment:
+  - PYTHON: "C:\\Python26"
 
 install:
   # - "%PYTHON%\\python.exe -m pip install flake8 mock nose"
