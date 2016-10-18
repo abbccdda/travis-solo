@@ -1,20 +1,16 @@
-# environment:
-#   matrix:
-#     - PYTHON: "C:\\Python26"
-#     - PYTHON: "C:\\Python27"
-#     - PYTHON: "C:\\Python32"
-#     - PYTHON: "C:\\Python34"
-
 environment:
-  PYTHON: "C:\\Python26"
+  matrix:
+    - PYTHON: "C:\\Python26"
+    - PYTHON: "C:\\Python27"
+    - PYTHON: "C:\\Python32"
+    - PYTHON: "C:\\Python34"
+
+
 
 install:
-  # - "%PYTHON%\\python.exe -m pip install flake8 mock nose"
-  # - "%PYTHON%\\python.exe -m pip install ."
   - "%PYTHON%/Scripts/pip.exe install flake8 mock nose"
   - "%PYTHON%/Scripts/pip.exe install ."
   - "SET PATH=%PYTHON%;%PYTHON%\\Scripts;%PATH%"
-
 
 test_script: 
   # - "%PYTHON%/Scripts/nosetests.exe -v"
