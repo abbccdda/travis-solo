@@ -15,6 +15,7 @@ install:
   - "%PYTHON%/Scripts/pip.exe install ."
 
 test_script: 
-	- nosetests -v && flake8 *.py --max-line-length=110
+	- nosetests -vv 
+  - flake8 *.py --max-line-length=110
 
 build: off
